@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    background-color: rgb(123, 123, 204);
+    color: beige;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(201, 201, 201);
+}
+
+#produtos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem {
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 2vh solid #ffffff;
+    border-radius: 10%;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.status-false {
+    height: 2vh;
+    width: 2vh;
+    background-color: red;
+    border-radius: 48px;
+}
+
+.status-true {
+    height: 2vh;
+    width: 2vh;
+    background-color: green;
+    border-radius: 48px;
+}
+
+.botao-voltar {
+    background-color: transparent;
+    border: none;
+    margin-right: 3vh;
+}
+
+.voltar {
+    width: 3vh;
+}
