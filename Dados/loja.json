@@ -1,20 +1,26 @@
 [
   {
     "id": 1,
-    "descricao": "Produto 1",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3cExnsB3qat_a-YqS4zThCXsiR4TWk2f4_-Do7MXhw&s",
+    "descricao": "Banana ouro",
+    "imagem": "../img/image-banana-ouro.png",
     "preco": 10.0
   },
   {
     "id": 2,
-    "descricao": "Produto 2",
-    "imagem": "https://storage.alboom.ninja/sites/7474/albuns/343827/fotografia-de-produtos-campinas-fotografo-publicidade-aloha-life-11.jpg?t=1541510096",
+    "descricao": "Banana Prata",
+    "imagem": "../img/image-banana-prata.png",
     "preco": 20.0
   },
   {
     "id": 3,
-    "descricao": "Produto 3",
-    "imagem": "https://skinquer.com.br/cdn/shop/articles/blogordem.jpg?v=1687270129",
+    "descricao": "Banana nanica",
+    "imagem": "../img/image-banana-nanica.png",
     "preco": 30.0
+  },
+  {
+    "id": 4,
+    "descricao": "Banana terra",
+    "imagem": "../img/image-banana-terra.png",
+    "preco": 40.0
   }
 ]
