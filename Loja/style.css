@@ -1,1 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+  .idPerfil {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  @media (width <= 900px) {
+    .center {
+      justify-content: center;
+      gap: 2vh;
+    }
+  }
