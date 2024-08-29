@@ -1,3 +1,6 @@
+let pop_up = document.getElementById("pedido")
+
+
 $(document).ready(function () {
   // Recupera o carrinho do localStorage
   const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
@@ -91,5 +94,11 @@ function gerarDocumentoWord() {
   link.href = URL.createObjectURL(blob);
   link.download = "carrinho.doc";
   link.click();
-  document.getElementById("pedido").style.display = "block";
+  pop_up.style.display = "block";
 }
+
+
+let botao_fechar = document.getElementById('botao-fechar');
+botao_fechar.addEventListener('click', () => {
+  pop_up.style.display = 'none';
+})
