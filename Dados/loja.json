@@ -34,5 +34,53 @@
     "status": true,
     "imagem": "../img/img-produtos/image-banana-terra.png",
     "preco": 40.434343
+  },
+
+
+
+  {
+    "id": 5,
+    "nome": "Banana maçã",
+    "descricao": "",
+    "quantidade": "",
+    "status": true,
+    "imagem": "../img/img-produtos/image-banana-maca.png",
+    "preco": 15.545454
+  },
+  {
+    "id": 6,
+    "nome": "Banana Banana",
+    "descricao": "",
+    "quantidade": "",
+    "status": true,
+    "imagem": "../img/img-produtos/image-banana-banana.png",
+    "preco": 12.545454
+  },
+  {
+    "id": 7,
+    "nome": "Banana Baby",
+    "descricao": "",
+    "quantidade": "",
+    "status": true,
+    "imagem": "../img/img-produtos/image-banana-baby.png",
+    "preco": 18.656565
+  },
+  {
+    "id": 8,
+    "nome": "Banana Verde",
+    "descricao": "",
+    "quantidade": "",
+    "status": true,
+    "imagem": "../img/img-produtos/image-banana-verde.png",
+    "preco": 25.787878
+  },
+  {
+    "id": 10,
+    "nome": "Banana com Canela",
+    "descricao": "",
+    "quantidade": "",
+    "status": true,
+    "imagem": "../img/img-produtos/image-banana-canela.png",
+    "preco": 35.232323
   }
 ]
