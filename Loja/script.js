@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
       produtos = data;
       const produtosContainer = document.getElementById("produtos-container");
 
-      produtos.map((produto, index) => {
+
+      produtos.forEach((produto) => {
         const card = document.createElement("div");
         card.className = "card";
         card.style.width = "18rem";
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         botaoCarrinho.href = "#";
         botaoCarrinho.className = "botaoCarrinho";
         botaoCarrinho.textContent = "Adicionar ao Carrinho";
-        botaoCarrinho.setAttribute("data-indice", index);
+        botaoCarrinho.setAttribute("data-indice", produtos.indexOf(produto));
 
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
