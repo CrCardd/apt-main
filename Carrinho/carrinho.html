@@ -8,17 +8,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <a href="../Loja/loja.html">Continuar comprando</a>
-    <h1>Carrinho</h1>
-    <div id="lista"></div>
-    <h3 id="total"></h3>
-    <button onclick="gerarDocumentoWord()">Realizar pedido</button>
-    
-    <div id="pedido">
-      <p>Pedido gerado com sucesso</p>
-      <button id="botao-fechar">Fechar</button>
-    </div>
+  <body class="body">
+
+    <header class="header">
+      <a href="../Loja/loja.html">Continuar comprando</a>
+    </header>
+
+    <main>
+
+
+
+
+      <div class="compra">
+        
+        <div class="mostrarItens">
+          <h1>Carrinho</h1>
+          <div id="lista"></div>
+          <h3 id="total"></h3>
+        </div>
+  
+        <div class="finalizar">
+          <button class="botaoFinalizar" onclick="gerarDocumentoWord()">Realizar pedido</button>
+          <div id="pedido">
+            <p>Pedido gerado com sucesso</p>
+            <button id="botao-fechar">Fechar</button>
+          </div>
+  
+        </div>
+        
+      </div>  
+
+
+      
+
+
+    </main>
+
+
     <script src="script.js"></script>
   </body>
 </html>
