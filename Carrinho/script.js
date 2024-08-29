@@ -23,7 +23,7 @@ $(document).ready(function () {
     $.each(carrinho, function (index, item) {
       // Cria um elemento de lista para cada item
       const listItem = $("<li>").text(
-        `${item.descricao} - Preço: $${item.preco.toFixed(2)}`
+        `${item.nome} - Preço: $${item.preco.toFixed(2)}`
       );
 
       // Cria um botão de remoção
@@ -69,8 +69,8 @@ function gerarDocumentoWord() {
   // Remove os botões de remoção da lista clonada
   $(listaClone).find("button").remove();
 
-  const listaHtml = listaClone.innerHTML;
-  const totalHtml = totalElement.innerHTML;
+  const lista = listaClone.innerHTML;
+  const total = totalElement.innerHTML;
 
   const conteudoHtml = `
     <html>
