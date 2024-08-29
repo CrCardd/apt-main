@@ -1,5 +1,7 @@
+
 // Declaração da variável produtos fora do escopo do evento para torná-la global
 let produtos;
+const pop_up = document.querySelector("dialog");
 
 window.onload = function () {
   var storedUser = localStorage.getItem("usuario");
@@ -37,16 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
         cardText.className = "cardText";
         cardText.textContent = "Preço: $" + produto.preco.toFixed(2);
 
-        const btnAdicionarAoCarrinho = document.createElement("a");
-        btnAdicionarAoCarrinho.href = "#";
-        btnAdicionarAoCarrinho.className =
-          "btn btn-primary btn-adicionar-ao-carrinho";
-        btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
-        btnAdicionarAoCarrinho.setAttribute("data-indice", index);
+        const botaoCarrinho = document.createElement("a");
+        botaoCarrinho.href = "#";
+        botaoCarrinho.className = "botaoCarrinho";
+        botaoCarrinho.textContent = "Adicionar ao Carrinho";
+        botaoCarrinho.setAttribute("data-indice", index);
 
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
-        cardBody.appendChild(btnAdicionarAoCarrinho);
+        cardBody.appendChild(botaoCarrinho);
 
         card.appendChild(imagem);
         card.appendChild(cardBody);
@@ -56,15 +57,26 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Erro ao carregar o arquivo JSON", error));
 
+
+
   $("#produtos-container").on(
     "click",
-    ".btn-adicionar-ao-carrinho",
-    function () {
+    ".botaoCarrinho",
+    async function () {
       const indexDoProduto = $(this).data("indice");
       const produtoSelecionado = produtos[indexDoProduto];
+
+      pop_up.showModal();
+      
+
       let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
       carrinho.push(produtoSelecionado);
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
     }
   );
 });
+
+let close_pop_up = document.getElementById('close-pop-up');
+close_pop_up.addEventListener('click', () => {
+  pop_up.close()
+})
