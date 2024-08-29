@@ -20,9 +20,9 @@ imagem_senha.addEventListener('click', () => {
 
 
 
-
-let botao_login = document.getElementById('botao-login');
-botao_login.addEventListener('click', () => {
+let pop_ups = document.querySelectorAll('dialog')
+let botao_check = document.getElementById('botao-check');
+botao_check.addEventListener('click', () => {
   console.log('teste');
   var nome = $("#nome").val();
   var senha = $("#senha").val();
@@ -33,11 +33,20 @@ botao_login.addEventListener('click', () => {
       dataEntrada: new Date(),
       id: Math.floor(Math.random() * 100000),
     };
-
     localStorage.setItem("usuario", JSON.stringify(user));
-
-    window.location.href = "../Loja/loja.html";
+    pop_ups[0].showModal();
   } else {
+    pop_ups[1].showModal();
     //logica para se o nome e senha forem incorretos
   }
+})
+
+let botao_login = document.getElementById('botao-login');
+botao_login.addEventListener('click', () => {
+  window.location.href = "../Loja/loja.html";
+})
+
+let botao_retry = document.getElementById('botao-retry')
+botao_retry.addEventListener('click', () => {
+  pop_ups[1].close();
 })
